@@ -83,17 +83,37 @@ export const education = [
 ];
 
 export const skills = [
+  // Frontend & Mobile
   { name: "React / Redux", level: "Advanced" },
   { name: "React Native", level: "Advanced" },
   { name: "TypeScript", level: "Advanced" },
+  { name: "Responsive UI / CSS", level: "Advanced" },
+  // Backend & APIs
   { name: "Node.js / Express.js", level: "Advanced" },
-  { name: "Python", level: "Advanced" },
+  { name: "REST APIs / Swagger", level: "Advanced" },
+  { name: "API Design", level: "Advanced" },
+  // Databases
   { name: "MySQL", level: "Advanced" },
   { name: "MongoDB", level: "Intermediate" },
+  { name: "Redis / Caching", level: "Intermediate" },
+  // Languages
+  { name: "Python", level: "Advanced" },
+  { name: "JavaScript / ES6+", level: "Advanced" },
+  // DevOps & Cloud
   { name: "AWS", level: "Intermediate" },
   { name: "Docker", level: "Intermediate" },
-  { name: "REST APIs / Swagger", level: "Advanced" },
-  { name: "Git / Agile", level: "Advanced" },
+  { name: "CI/CD", level: "Intermediate" },
+  { name: "Linux / Shell", level: "Intermediate" },
+  // Design & Quality
+  { name: "System Design", level: "Intermediate" },
+  { name: "Design Patterns", level: "Advanced" },
+  { name: "Data Structures & Algorithms", level: "Intermediate" },
+  { name: "Testing (Unit / Integration)", level: "Intermediate" },
+  { name: "Security Best Practices", level: "Intermediate" },
+  // Process & Collaboration
+  { name: "Git / Version Control", level: "Advanced" },
+  { name: "Agile / Scrum", level: "Advanced" },
+  { name: "Code Review & Mentoring", level: "Intermediate" },
 ];
 
 export const certifications = [
