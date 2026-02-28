@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #06060a;
+  --bg-elevated: #0c0c12;
+  --bg-card: rgba(18, 18, 28, 0.6);
+  --text: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --accent: #38bdf8;
+  --accent-dim: #0ea5e9;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Subtle grid */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* Hero gradient blob */
+.hero-glow {
+  position: absolute;
+  inset: -40% -20% -40% -20%;
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 50%,
+    rgba(56, 189, 248, 0.08) 0%,
+    rgba(124, 58, 237, 0.04) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 40%, #c084fc 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  @apply transition-all duration-300;
+}
+.card-hover:hover {
+  @apply -translate-y-1 border-brand-500/30 shadow-xl shadow-brand-500/10;
+}
+
+/* Section label above headings */
+.section-label {
+  @apply mb-3 text-sm font-medium uppercase tracking-widest text-brand-400/90;
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-brand-400 ring-offset-2 ring-offset-ink-950;
+}
+
+/* Selection */
+::selection {
+  background: rgba(56, 189, 248, 0.25);
+  color: #f4f4f5;
+}
